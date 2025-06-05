@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "ar": "لَا إِلَٰهَ إِلَّا ٱللَّٰهُ",
+    "en": "There is no god but Allah.",
+    "ur": "کوئی معبود نہیں سوائے اللہ کے۔",
+    "count": 100
+  },
+  {
+    "id": 2,
+    "ar": "سُبْحَانَ ٱللَّٰهِ",
+    "en": "Glory be to Allah.",
+    "ur": "اللہ پاک ہے۔",
+    "count": 100
+  },
+  {
+    "id": 3,
+    "ar": "ٱلْحَمْدُ لِلَّٰهِ",
+    "en": "All praise is due to Allah.",
+    "ur": "سب تعریفیں اللہ کے لیے ہیں۔",
+    "count": 100
+  },
+  {
+    "id": 4,
+    "ar": "ٱللَّٰهُ أَكْبَرُ",
+    "en": "Allah is the greatest.",
+    "ur": "اللہ سب سے بڑا ہے۔",
+    "count": 100
+  },
+  {
+    "id": 5,
+    "ar": "سُبْحَانَ ٱللَّٰهِ وَبِحَمْدِهِ",
+    "en": "Glory be to Allah and with His praise.",
+    "ur": "اللہ پاک ہے اور اپنی تعریف کے ساتھ۔",
+    "count": 100
+  },
+  {
+    "id": 6,
+    "ar": "أَسْتَغْفِرُ ٱللَّٰهَ",
+    "en": "I seek forgiveness from Allah.",
+    "ur": "میں اللہ سے مغفرت مانگتا ہوں۔",
+    "count": 100
+  },
+  {
+    "id": 7,
+    "ar": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّٰهِ",
+    "en": "There is no might nor power except with Allah.",
+    "ur": "نہیں کوئی طاقت اور نہ کوئی قوت مگر اللہ کے ساتھ۔",
+    "count": 100
+  },
+  {
+    "id": 8,
+    "ar": "ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ",
+    "en": "O Allah, send your peace and blessings upon Muhammad and upon the family of Muhammad.",
+    "ur": "اے اللہ! رحمت نازل فرما محمد صلی اللہ علیہ وسلم پر اور آل محمد پر۔",
+    "count": 100
+  },
+  {
+    "id": 9,
+    "ar": "سُبْحَانَ ٱللَّٰهِ وَٱلْحَمْدُ لِلَّٰهِ وَلَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَٱللَّٰهُ أَكْبَرُ",
+    "en": "Glory be to Allah, and all praise is due to Allah, and there is no god but Allah, and Allah is the greatest.",
+    "ur": "اللہ پاک ہے اور سب تعریفیں اللہ کے لیے ہیں اور کوئی معبود نہیں سوائے اللہ کے اور اللہ سب سے بڑا ہے۔",
+    "count": 100
+  }
+]
