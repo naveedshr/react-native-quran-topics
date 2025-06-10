@@ -17,8 +17,7 @@
     },
     "androidNavigationBar": {
       "visible": "navigation-bar", 
-      "backgroundColor": "#ffffff", 
-      "barStyle": "dark-content"   
+      "backgroundColor": "#000000"
     },
     "android": {
       "adaptiveIcon": {

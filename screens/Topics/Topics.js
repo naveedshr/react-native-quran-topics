@@ -1,8 +1,6 @@
 import { StyleSheet, View, Text, TouchableOpacity, Image, Dimensions, ImageBackground } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import LottieView from 'lottie-react-native';
-import { FontAwesome5 } from '@expo/vector-icons';
-import CustomHeader from '../../components/CustomHeader';
 
 export default function Topics() {
   const navigation = useNavigation();
@@ -21,7 +19,6 @@ export default function Topics() {
 
   return (
     <View style={styles.container}>
-      {/* <CustomHeader/> */}
       <View style={styles.header}>
         <LottieView source={require('../../assets/animations/bookanimation.json')}
           autoPlay
@@ -31,7 +28,7 @@ export default function Topics() {
           style={{ width: 160, height: 160, marginTop: 25, marginBottom: -15 }}
         />
         <Text style={{ fontSize: 11, fontWeight: '600', color: '#fff', fontFamily: 'Open-Sans' }}>🌙 Wednesday, 17 Shawwal 1446 AH</Text>
-        <View style={{ paddingHorizontal: 20, paddingVertical: 5, borderTopLeftRadius: 10, borderRadius: 10,  backgroundColor: '#474747' }}>
+        <View style={{ paddingHorizontal: 20, paddingVertical: 5, borderTopLeftRadius: 10, borderRadius: 10, backgroundColor: '#474747' }}>
           <Text style={styles.title}>Explore Topics</Text>
         </View>
       </View>
@@ -127,12 +124,6 @@ const styles = StyleSheet.create({
     fontSize: 26,
     color: '#fff',
     fontFamily: 'Open-Sans'
-  },
-  subtitle: {
-    fontSize: 10,
-    color: '#fff',
-    fontFamily: 'Noto-Medium',
-    marginBottom: -10,
   },
   row: {
     flexDirection: 'row',

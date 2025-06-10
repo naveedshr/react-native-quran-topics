@@ -1,14 +1,11 @@
 import { FlatList, StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
-import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { Foundation } from '@expo/vector-icons';
 
 const stack = createNativeStackNavigator();
 
-export default function Zikr({navigation, route}) {
+export default function Zikr({ navigation, route }) {
 
   const izkaar = require('../../data/izkaar.json');
-  console.log("Izkaar: ", izkaar[0].en);
 
   return (
     <View style={{ flex: 1 }}>
@@ -17,9 +14,9 @@ export default function Zikr({navigation, route}) {
         renderItem={({ item }) => {
           return (
             <View style={styles.card}>
-              <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Tasbeeh', {ar: item.ar, en: item.en , ur: item.ur, count: item.count})}>
-                <Image source={require('../../assets/images/counter.png')} style={{height: 45, width: 45}} />
-                </TouchableOpacity>
+              <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Tasbeeh', { ar: item.ar, en: item.en, ur: item.ur, count: item.count })}>
+                <Image source={require('../../assets/images/counter.png')} style={{ height: 45, width: 45 }} />
+              </TouchableOpacity>
               <View style={{ flex: 1 }}>
                 <Text style={styles.arabicText} numberOfLines={1}>{item.ar}</Text>
                 <Text style={styles.urduText} numberOfLines={1}>{item.ur}</Text>
@@ -75,7 +72,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#e3d040',
     borderColor: '#d1bf34',
     borderWidth: 1,
-    alignItems:'center',
+    alignItems: 'center',
     justifyContent: 'center',
   },
 })

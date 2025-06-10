@@ -56,13 +56,6 @@ const styles = StyleSheet.create({
     // borderWidth: 3,
     marginTop: 45,
   },
-  title: {
-    fontSize: 22,
-    fontFamily: 'Winky-Sans-SemiBold',
-    textAlign: 'center',
-    color: '#fff',
-    marginVertical: 5,
-  },
   description: {
     textAlign: 'justify',
     marginVertical: 10,

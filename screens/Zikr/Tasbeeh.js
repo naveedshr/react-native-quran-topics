@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Dimensions, ScrollView, Image, ImageBackground, TouchableOpacity, Modal } from 'react-native'
-import React, { useState, useCallback } from 'react'
+import React, { useState } from 'react'
 import { Ionicons } from '@expo/vector-icons';
 import * as Progress from 'react-native-progress';
 import RadioGroup from 'react-native-radio-buttons-group';
@@ -26,11 +26,9 @@ export default function Tasbeeh({ route }) {
 
   const handleRadioPress = (id) => {
     setSelectedId(id);
-    console.log("ID: ", id)
     const selected = radioButtons.find(rb => rb.id === id);
     if (selected) {
       setSelectedValue(selected.label);
-      // setMax(Number(selectedValue));
     }
   };
 
@@ -62,7 +60,7 @@ export default function Tasbeeh({ route }) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
-            <Text style={{fontSize: 16, fontFamily: 'Open-Sans'}}>Select Max Count</Text>
+            <Text style={{ fontSize: 16, fontFamily: 'Open-Sans' }}>Select Max Count</Text>
             <RadioGroup
               containerStyle={styles.radioGroup}
               radioButtons={radioButtons}
@@ -70,7 +68,7 @@ export default function Tasbeeh({ route }) {
               onPress={handleRadioPress}
             />
             <TouchableOpacity style={styles.button1} onPress={editMax} >
-              <Text style={{fontSize: 20, fontFamily: 'Open-Sans'}}>OK</Text>
+              <Text style={{ fontSize: 20, fontFamily: 'Open-Sans' }}>OK</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -96,11 +94,10 @@ export default function Tasbeeh({ route }) {
         <TouchableOpacity style={styles.touchArea} onPress={handleCount}>
           <Text style={{ fontSize: 150, color: '#fff' }}>
             {count}
-            {/* <Text style={{fontSize: 25, color: '#e5eb34'}}>/100</Text> */}
           </Text>
           <Text style={{ fontSize: 18, fontStyle: 'italic', color: 'gray', position: 'absolute', bottom: 10, right: -7 }}>/{selectedValue || max}</Text>
         </TouchableOpacity>
-        
+
       </ImageBackground>
     </View>
   )
@@ -111,10 +108,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
-    // backgroundColor: '#e6e6e6', 
   },
   scrollStyle: {
-    // borderColor: '#c4c4c4',
     borderColor: '#e3e3e3',
     backgroundColor: '#fff',
     width: Dimensions.get('window').width * 0.95,
@@ -135,10 +130,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     elevation: 3,
   },
-  image: {
-    height: Dimensions.get('window').width * 0.9,
-    width: Dimensions.get('window').width * 0.9,
-  },
   touchArea: {
     height: Dimensions.get('window').width * 0.9,
     width: Dimensions.get('window').width * 0.9,
@@ -151,7 +142,6 @@ const styles = StyleSheet.create({
     fontSize: 26,
     textAlign: 'right',
     color: '#b83021',
-    // alignSelf: 'center',
     marginTop: 10,
   },
   englishText: {
@@ -159,14 +149,12 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginVertical: 10,
     color: '#303030',
-    // alignSelf: 'center',
   },
   urduText: {
     fontFamily: 'Noto-Regular',
     fontSize: 14,
     textAlign: 'right',
     color: '#303030',
-    // alignSelf: 'center',
   },
 
   ////////////////
@@ -176,29 +164,25 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
   modalContent: {
-   backgroundColor: '#fff',
-    // height: Dimensions.get('window').width * 0.5,
-    // width: Dimensions.get('window').width * 0.5,
+    backgroundColor: '#fff',
     padding: 20,
     borderRadius: 10,
-    width: '60%', // Adjust as needed
+    width: '60%',
     alignItems: 'flex-start',
   },
   radioGroup: {
-    // flexDirection: 'column',
-    // alignItems: 'center',
     alignItems: 'flex-start',
     marginVertical: 20,
   },
   button1: {
-      width: '100%', 
-      height: 50, 
-      backgroundColor: '#e3d040', 
-      borderRadius: 8, 
-      justifyContent: 'center', 
-      alignItems:'center',
+    width: '100%',
+    height: 50,
+    backgroundColor: '#e3d040',
+    borderRadius: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 })
